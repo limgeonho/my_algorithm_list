@@ -1,7 +1,7 @@
 # 다익스트라 알고리즘
 # 한 정점에서 다른 정점으로 갈 수 있는 최단 거리
 # heapq 사용하기
-#
+# 힙에 push할때 가중치와 노드번호를 반대로 넣어준다 = 그래야 가중치를 기준으로 오름차순 정렬됨
 
 
 import heapq
@@ -15,6 +15,7 @@ start = int(input())
 graph = [[]for i in range(n+1)]
 distance = [INF] * (n+1)
 
+# 간선 정보 입력(연결리스트)
 for _ in range(m):
     a, b, c = map(int, input().split())
     graph[a].append((b, c))

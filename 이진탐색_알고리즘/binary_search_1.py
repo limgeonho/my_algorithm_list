@@ -1,5 +1,6 @@
 # 이진탐색(재귀함수로 구현)
 # target 수를 입력 받고 리스트안에서 target의 위치를 반환하는 방법
+# 이진탐색을 하기 위해서는 리스트가 정렬이 되어 있는게 전제되어야 한다.
 
 def binary_search(array, target, start, end):
     if start > end:
