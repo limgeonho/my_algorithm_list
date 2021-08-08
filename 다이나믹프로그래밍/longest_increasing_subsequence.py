@@ -33,5 +33,5 @@ for i in range(1, n):
     else:
         dp[bisect_left(dp, array[i])] = array[i]
 
-result = max(dp)
+result = len(dp)
 print(dp)
