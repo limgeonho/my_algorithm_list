@@ -35,3 +35,5 @@
 - combination
 - product
 - prime_number
+
+![증명사진_임건호](https://user-images.githubusercontent.com/73927750/128704736-61bc6ed4-a902-4e6f-ab44-4cc22af40f5b.jpg)
