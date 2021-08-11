@@ -12,7 +12,10 @@ def rotate_matrix_by_90_degree(a):
     row_length = len(a)
     column_length = len(a[0])
 
+    # 새로운 행렬의 기본 설정(기존의 행렬과는 반대)
     res = [[0] * row_length for _ in range(column_length)]
+
+    # 오른쪽 위에서 부터 하나씩 아래로 채워나감
     for r in range(row_length):
         for c in range(column_length):
             res[c][row_length - 1 - r] = a[r][c]
