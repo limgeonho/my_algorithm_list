@@ -14,9 +14,8 @@ def find_parent(parent, x):
         parent[x] = find_parent(parent, parent[x])
     return parent[x]
 
+
 # 연결된 두 원소 중 작은 번호의 원소를 부모로 한다
-
-
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
     b = find_parent(parent, b)
