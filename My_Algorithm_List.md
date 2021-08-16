@@ -44,3 +44,8 @@
 
 - multiply_matrix
 - rotate_matrix
+
+## 8. 패턴 알고리즘
+
+- boyer_moore
+- brute_force

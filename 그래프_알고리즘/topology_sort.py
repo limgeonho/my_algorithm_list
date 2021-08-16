@@ -20,9 +20,8 @@ for _ in range(e):
     # (a -> b)이기 때문에 b의 진입차수를 1증가
     indegree[b] += 1
 
+
 # 위상 정렬
-
-
 def topology_sort():
     result = []
     q = deque()
