@@ -104,3 +104,27 @@ eval("1 + 2")
 
 ==================================================================
 
+전치행렬에 대해...=> 가로세로 따로 탐색할 때 유용함
+
+=> 가로에 관해 함수를 만들고 => 전치행렬을 통해 뒤집고 => 다시 가로에 관한 함수 재사용
+
+```python
+def transposed_matrix(array):
+	row = len(array)
+	col = len(array[0])
+	changed_array = [[0]*(row) for _ in range(col)]
+        
+	for i in range(row):
+		for j in range(col):
+			changed_array[j][i] = array[i][j]
+	return changed_array
+             
+# ================================================================================
+def transposed_matrix(array):
+    changed_array = [[0]*(n) for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            changed_array[i][j] = array[j][i]
+    return changed_array
+```
+
