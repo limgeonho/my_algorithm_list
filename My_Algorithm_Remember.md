@@ -126,5 +126,9 @@ def transposed_matrix(array):
         for j in range(n):
             changed_array[i][j] = array[j][i]
     return changed_array
+
+# ================================================================================
+T = list(zip(*matrix))
+
 ```
 
