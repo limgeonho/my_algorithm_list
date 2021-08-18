@@ -108,27 +108,40 @@ eval("1 + 2")
 
 => 가로에 관해 함수를 만들고 => 전치행렬을 통해 뒤집고 => 다시 가로에 관한 함수 재사용
 
+=> T = list(zip(*matrix))
+
+==================================================================
+
+orderedDict
+
+from collections import orderedDict 로 사용
+
+dict는 원래 순서가 없지만 orderdict는 순서가 있음
+
 ```python
-def transposed_matrix(array):
-	row = len(array)
-	col = len(array[0])
-	changed_array = [[0]*(row) for _ in range(col)]
-        
-	for i in range(row):
-		for j in range(col):
-			changed_array[j][i] = array[i][j]
-	return changed_array
-             
-# ================================================================================
-def transposed_matrix(array):
-    changed_array = [[0]*(n) for _ in range(n)]
-    for i in range(n):
-        for j in range(n):
-            changed_array[i][j] = array[j][i]
-    return changed_array
+order_dict = orderedDict()
 
-# ================================================================================
-T = list(zip(*matrix))
+order_dict['A'] = 1
+order_dict['B'] = 2
+order_dict['C'] = 3
 
+OrderedDict([('A', 1), ('B', 2), ('C', 3)])
+for key, val in ordered_dic.items():
+	print(key, val)
+
+A 1
+B 2
+C 3
+# => dict에 입력되는 순서대로 저장됨 
 ```
+
+popitem(last=True)
+
+=> orderedDict에서 마지막에 있는 아이템들을 return 및 삭제함
+
+popitem(last=False)
+
+=> orderedDict에서 처음에 있는 아이템들을 return 및 삭제함
+
+==================================================================
 
