@@ -7,7 +7,7 @@ a = [
 ]
 
 
-def rotate_matrix_by_90_degree(a):
+def rotate_matrix_by_90_degree_1(a):
     # 기존 행렬의 행과열의 순서를 바꿔야한다 : 행, 열 => 열, 행
     row_length = len(a)
     column_length = len(a[0])
@@ -23,10 +23,28 @@ def rotate_matrix_by_90_degree(a):
     return res
 
 
-print(rotate_matrix_by_90_degree(a))
+print(rotate_matrix_by_90_degree_1(a))
 # [
 # [9, 5, 1],
 # [10, 6, 2],
 # [11, 7, 3],
 # [12, 8, 4]
+# ]
+
+# ======================================================
+
+
+def rotate_matrix_by_90_degree_2(a):
+
+    changed = [k[::-1] for k in zip(*a)]
+
+    return changed
+
+
+print(rotate_matrix_by_90_degree_2(a))
+# [
+# (9, 5, 1),
+# (10, 6, 2),
+# (11, 7, 3),
+# (12, 8, 4)
 # ]
