@@ -75,7 +75,7 @@ from collections import defaultdict
 
 list_dict = defaultdict(list)
 set_dict = defaultdict(set)
-=>default 값을 list와 set으로 미리 설정할 수 도 있음
+=> default 값을 list와 set으로 미리 설정할 수 도 있음
 
 => Counter과 같은 역할임 
 
@@ -142,6 +142,46 @@ popitem(last=True)
 popitem(last=False)
 
 => orderedDict에서 처음에 있는 아이템들을 return 및 삭제함
+
+==================================================================
+
+ 문자열 앞에 0으로 채우기 => zfill()
+
+- str.zfill(5) => str문자 앞에 전체 길이 5가 되도록 0으로 채우기
+
+```python
+"3".zfill(3)
+# 003
+
+"s".zfill(5)
+# 0000s
+
+for x in range(3):
+    print(str(x).zfill(4))
+# 0000
+# 0001
+# 0002
+```
+
+- rjust(), ljust() 
+
+=> rjust(`<만들 전체 개수>`, `<채워 넣을 문자>`) : str을 오른쪽정렬
+
+=> ljust(`<만들 전체 개수>`, `<채워 넣을 문자>`) : str을 왼쪽정렬
+
+```python
+"77".rjust(5, "0")
+# 00077
+
+"123".rjust(5, "a")
+# aa123
+
+"222".ljust(5, "0")
+# 22200
+
+"222"ljust(7, "aa")
+# 222aaaaa
+```
 
 ==================================================================
 
