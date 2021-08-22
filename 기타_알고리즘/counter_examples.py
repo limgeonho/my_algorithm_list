@@ -5,6 +5,20 @@ from collections import Counter
 # 반환되는 type는 counter이기 때문에 dict()로 변환해주면 편리하게 사용가능
 
 counter = Counter(['red', 'blue', 'green', 'blue', 'blue', 'red'])
-
 print(dict(counter))
 # {'red': 2, 'blue': 3, 'green': 1}
+
+# ==============================================================================
+
+strings = Counter('abcabcdddabcfdsfds')
+print(dict(strings))
+# {'a': 3, 'b': 3, 'c': 3, 'd': 5, 'f': 2, 's': 2}
+
+# ==============================================================================
+
+strings_not_use_counter = 'abcabcdddabcfdsfds'
+answer = {}
+for s in strings_not_use_counter:
+    answer[s] = answer.get(s, 0) + 1
+print(answer)
+# {'a': 3, 'b': 3, 'c': 3, 'd': 5, 'f': 2, 's': 2}
