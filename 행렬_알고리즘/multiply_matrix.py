@@ -17,6 +17,6 @@ def multiply_matrix(arr1, arr2):
         for j in range(column):
             # 이후 부터는 새로운 i행j열짜리 행렬을 만들면서 두 행렬의 곱을 넣어준다. k의 범위는 len(arr1[0])이거나 len(arr2)여도 된다.
             for k in range(len(arr1[0])):
-                answer[i][j] = arr1[i][k] * arr2[k][j]
+                answer[i][j] += arr1[i][k] * arr2[k][j]
 
     return answer
