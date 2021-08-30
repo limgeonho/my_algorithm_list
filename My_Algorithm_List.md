@@ -21,6 +21,7 @@
 - bubble_sort - 버블정렬
 - counting_sort - 카운팅정렬(계수정렬)
 - selection_sort - 선택정렬
+- merge_sort - 병합정렬
 
 ## 5. 최단경로 알고리즘
 
@@ -31,21 +32,31 @@
 
 - counter
 - heapq
-- itertools
 - math
-- permutation
-- combination
-- product
 - prime_number1, 2
-- subset
 - two_pointer
+- tree
 
 ## 7. 행렬 알고리즘
 
 - multiply_matrix
 - rotate_matrix
+- transposed_matrix
 
 ## 8. 패턴 알고리즘
 
 - boyer_moore
 - brute_force
+- pythonic_way
+
+## 9. DFS_BFS_알고리즘
+
+- dfs
+- bfs
+
+## 10. 순열_조합_부분집합_알고리즘
+
+- combination
+- itertools
+- permutation
+- subset
