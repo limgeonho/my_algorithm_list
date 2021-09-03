@@ -3,39 +3,39 @@
 # 나눈 리스트를 하나씩 비교하면서 정렬하고 합침 => 반복
 # O(nlongn)
 
-def merge_sort(array):
-    if len(array) < 2:
-        return array
+def merge(left, right):
+    merged = list()
+    left_point, right_point = 0, 0
 
-    mid = len(array) // 2
-    left_array = merge_sort(array[:mid])
-    right_array = merge_sort(array[mid:])
+    # case1 - left/right 둘다 있을때
+    while len(left) > left_point and len(right) > right_point:
+        if left[left_point] > right[right_point]:
+            merged.append(right[right_point])
+            right_point += 1
+        else:
+            merged.append(left[left_point])
+            left_point += 1
 
-    return merge(left_array, right_array)
+    # case2 - left 데이터가 없을 때
+    while len(left) > left_point:
+        merged.append(left[left_point])
+        left_point += 1
+
+    # case3 - right 데이터가 없을 때
+    while len(right) > right_point:
+        merged.append(right[right_point])
+        right_point += 1
+
+    return merged
 
 
-def merge(left_array, right_array):
-    merged_array = []
-    while len(left_array) > 0 or len(right_array) > 0:
-
-        if len(left_array) > 0 and len(right_array) > 0:
-
-            if left_array[0] <= right_array[0]:
-                merged_array.append(left_array[0])
-                left_array.pop(0)
-            else:
-                merged_array.append(right_array[0])
-                right_array.pop(0)
-
-        elif len(left_array) > 0:
-            merged_array.append(left_array[0])
-            left_array.pop(0)
-
-        elif len(right_array) > 0:
-            merged_array.append(right_array[0])
-            right_array.pop(0)
-
-    return merged_array
+def merge_sort(data):
+    if len(data) <= 1:
+        return data
+    medium = int(len(data) / 2)
+    left = merge_sort(data[:medium])
+    right = merge_sort(data[medium:])
+    return merge(left, right)
 
 
 # array = [1, 5, 8, 41, 2, 68, 4, 5]
