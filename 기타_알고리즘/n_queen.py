@@ -3,6 +3,35 @@
 # 대표적인 백트래킹 문제
 # 놓아 나가면서 기존 조건에 위배되는 위치이후는 확인하지 않고 back!!
 
+# ===========================================================================================
+def is_available(candidate, current_col):
+    current_row = len(candidate)
+    for queen_row in range(current_row):
+        if candidate[queen_row] == current_col or abs(candidate[queen_row] - current_col) == current_row - queen_row:
+            return False
+    return True
+
+
+def DFS(N, current_row, current_candidate, final_result):
+    if current_row == N:
+        final_result.append(current_candidate[:])
+        return
+
+    for candidate_col in range(N):
+        if is_available(current_candidate, candidate_col):
+            current_candidate.append(candidate_col)
+            DFS(N, current_row + 1, current_candidate, final_result)
+            current_candidate.pop()
+
+
+def solve_n_queens(N):
+    final_result = []
+    DFS(N, 0, [], final_result)
+    return final_result
+
+# ===========================================================================================
+
+
 # 총 queen을 놓는 횟수가 체스판의 길이와 같을 때 까지 DFS
 def n_queens(col, i):
     n = len(col) - 1
