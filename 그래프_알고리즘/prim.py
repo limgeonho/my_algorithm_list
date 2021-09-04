@@ -5,42 +5,55 @@
 # 간선이 많은 경우에는 크루스칼보다 프림이 더 유리하다
 # 구현하는 과정은 다익스트라와 비슷함
 
+# 일반적인 prim
+# O(ElogE)
+# ================================================================================
+
+from heapdict import heapdict
 from collections import defaultdict
-import heapq
-import sys
-input = sys.stdin.readline
+from heapq import *
 
 
-n, m = map(int, input().split())    # n은 노드 수, m은 간선 수
-graph = defaultdict(list)   # 빈 그래프 생성
-visited = [0] * (n+1)   # 노드 방문 확인 리스트
+def prim(start_node, edges):
+    mst = list()
+    adjacent_edges = defaultdict(list)
+    for weight, n1, n2 in edges:
+        adjacent_edges[n1].append((weight, n1, n2))
+        adjacent_edges[n2].append((weight, n2, n1))
 
-# 무방향 그래프
-for i in range(m):
-    a, b, cost = map(int, input().split())
-    graph[a].append([cost, a, b])
-    graph[b].append([cost, b, a])
+    connected_nodes = set(start_node)
+    candidate_edge_list = adjacent_edges[start_node]
+    heapify(candidate_edge_list)
+
+    while candidate_edge_list:
+        weight, n1, n2 = heappop(candidate_edge_list)
+        if n2 not in connected_nodes:
+            connected_nodes.add(n2)
+            mst.append((weight, n1, n2))
+
+            for edge in adjacent_edges[n2]:
+                if edge[2] not in connected_nodes:
+                    heappush(candidate_edge_list, edge)
+
+    return mst
 
 
-# prim_algorithm
+# 개선된 prim
+# O(ElogV)
+# ===============================================================================
 def prim(graph, start):
-    visited[start] = 1    # 첫 노드 방문 체크 => 1
-    candidate = graph[start]    # 인접 간선 정보 추출
-    heapq.heapify(candidate)    # heapq 생성
-    mst = []    # 최소 신장 트리
-    result = 0    # 전체 가중치
+    mst, keys, pi, total_weight = list(), heapdict(), dict(), 0
+    for node in graph.keys():
+        keys[node] = float('inf')
+        pi[node] = None
+    keys[start], pi[start] = 0, start
 
-    while candidate:
-        cost, a, b = heapq.heappop(candidate)   # 가중치가 가장 적은 간선 정보 추출
-        if visited(b) == 0:   # 방문하지 않았다면
-            visited[b] = 1    # 방문 갱신
-            mst.append((a, b))    # mst에 추가
-            result += cost    # 가중치 누적
-
-            for edge in graph[b]:   # 다음 인접 간선 탐색
-                if visited[edge[2]] == 0:   # 방문한 노드가 아니라면
-                    heapq.heappush(candidate, edge)
-    return result
-
-
-print(prim(graph, 1))
+    while keys:
+        current_node, current_key = keys.popitem()
+        mst.append([pi[current_node], current_node, current_key])
+        total_weight += current_key
+        for adjacent, weight in mygraph[current_node].items():
+            if adjacent in keys and weight < keys[adjacent]:
+                keys[adjacent] = weight
+                pi[adjacent] = current_node
+    return mst, total_weight
