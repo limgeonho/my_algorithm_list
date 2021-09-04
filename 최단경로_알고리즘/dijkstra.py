@@ -20,9 +20,8 @@ for _ in range(m):
     a, b, c = map(int, input().split())
     graph[a].append((b, c))
 
+
 # start는 시작노드
-
-
 def dijkstra(start):
     q = []
     heapq.heappush(q, (0, start))
@@ -34,6 +33,7 @@ def dijkstra(start):
         for i in graph[now]:
             # i[1]은 간선의 가중치
             cost = dist + i[1]
+            # 중요한 점 : 지금까지 거리의 cost를 가지고 있는 distance값과 비교했을때 탐색하려는 cost가 작다면 업데이트하고 -> heapq에 heappush한다!!
             if cost < distance[i[0]]:
                 distance[i[0]] = cost
                 heapq.heappush(q, (cost, i[0]))
