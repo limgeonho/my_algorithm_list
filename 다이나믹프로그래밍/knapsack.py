@@ -14,8 +14,23 @@ for i in range(n):
     weight, value = map(int, input().split())
     # 선택한 물건의 가치를 포함하는 것을 적용한다고 가정하기 때문에 for문의 시작이 weight임
     # => 안그러면 음수 index
-    for j in range(weight, limit+1):
+    for j in range(limit, weight-1, -1):
         # weight를 포함했다고 가정하고 value를 추가한 상태에서 순환
         dy[j] = max(dy[j], dy[j-weight] + value)
 
 print(dy[limit])
+
+
+# =======================================================================================
+
+n, k = map(int, input().split())
+dp = [[0]*(k+1) for _ in range(n+1)]
+
+for i in range(1, n+1):
+    weight, value = map(int, input().split())
+    for j in range(1, k+1):
+        if j < weight:
+            dp[i][j] = dp[i-1][j]
+        else:
+            dp[i][j] = max(dp[i-1][j], dp[i-1][j-weight]+value)
+print(dp[n][k])
