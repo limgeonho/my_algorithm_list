@@ -8,14 +8,14 @@
 # disjoint_set을 이용하기 때문에 상당히 비슷
 
 # ====================================== disjoint_set ======================================
-# 부모 찾기
+# 부모 찾기(path-compression)
 def find_parent(parent, x):
     if parent[x] != x:
         parent[x] = find_parent(parent, parent[x])
     return parent[x]
 
 
-# 연결된 두 원소 중 작은 번호의 원소를 부모로 한다
+# 연결된 두 원소 중 작은 번호의 원소를 부모로 한다(union-by-rank)
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
     b = find_parent(parent, b)

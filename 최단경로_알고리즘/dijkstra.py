@@ -27,6 +27,7 @@ def dijkstra(start):
     heapq.heappush(q, (0, start))
     distance[start] = 0
     while q:
+        # dist == 지금까지 now에 오는데 걸리는 비용(거리)
         dist, now = heapq.heappop(q)
         if distance[now] < dist:
             continue
