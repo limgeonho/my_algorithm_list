@@ -57,3 +57,13 @@ def prim(graph, start):
                 keys[adjacent] = weight
                 pi[adjacent] = current_node
     return mst, total_weight
+
+
+# ===============================================================================
+# from collections import defaultdict
+
+# list_dict1 = defaultdict(list)
+# print(list_dict1['key1']) => []
+
+# list_dict2 = defaultdict(int)
+# print(list_dict2['key2']) => 0
