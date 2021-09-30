@@ -35,3 +35,36 @@ for start in range(n):
     interval_sum -= data[start]
 
 print(cnt)
+
+# =============================================================================
+# n은 데이터의 개수, s는 찾고자 하는 부분 합
+
+
+n, s = map(int, input().split())
+data = list(map(int, input().split()))
+
+left = right = 0
+sum = data[0]
+cnt = 0
+
+while left <= right and right < n:
+    # 구간합이 목표합보다 작은 경우 => right증가
+    if sum < s:
+        right += 1
+        if right < n:
+            sum += data[right]
+    # 구간합이 목표합과 같은 경우 => 카운팅 + right증가
+    elif sum == s:
+        cnt += 1
+        right += 1
+        if right < n:
+            sum += data[right]
+    # 구간합이 목표합보다 큰 경우 => 구간합에서 현재 left값을 빼고 left증가
+    elif sum > s:
+        sum -= data[left]
+        left += 1
+        if left > right and left < n:
+            right = left
+            sum = data[left]
+
+print(cnt)
