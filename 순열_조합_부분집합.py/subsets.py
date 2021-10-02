@@ -59,8 +59,6 @@ subset = []
 
 
 def comb(idx):
-    global total
-
     if idx == len(array):
         print(subset)
         return
