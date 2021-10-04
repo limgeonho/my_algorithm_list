@@ -46,6 +46,8 @@ for _ in range(e):
     edges.append((cost, a, b))
 
 edges.sort()
+# 만들어진 결과물이 MST인지 확인!!!
+cnt = 0
 
 for edge in edges:
     cost, a, b = edge
@@ -53,59 +55,14 @@ for edge in edges:
     if find_parent(parent, a) != find_parent(parent, b):
         union_parent(parent, a, b)
         result += cost
+        cnt += 1
 
 # MST를 충족하는 최소 비용
 print(result)
 
 
-# 두 번째 방법(path-compression, union-by-rank기법 활용)
-# ==============================================================================
-
-parent = dict()
-rank = dict()
-
-
-def find(node):
-    # path compression 기법
-    if parent[node] != node:
-        parent[node] = find(parent[node])
-    return parent[node]
-
-
-def union(node_v, node_u):
-    root1 = find(node_v)
-    root2 = find(node_u)
-
-    # union-by-rank 기법
-    if rank[root1] > rank[root2]:
-        parent[root2] = root1
-    else:
-        parent[root1] = root2
-        if rank[root1] == rank[root2]:
-            rank[root2] += 1
-
-
-def make_set(node):
-    parent[node] = node
-    rank[node] = 0
-
-
-def kruskal(graph):
-    mst = list()
-
-    # 1. 초기화
-    for node in graph['vertices']:
-        make_set(node)
-
-    # 2. 간선 weight 기반 sorting
-    edges = graph['edges']
-    edges.sort()
-
-    # 3. 간선 연결 (사이클 없는)
-    for edge in edges:
-        weight, node_v, node_u = edge
-        if find(node_v) != find(node_u):
-            union(node_v, node_u)
-            mst.append(edge)
-
-    return mst
+# MST 여부 확인 => MST의 경로 개수 == 노드 - 1
+if cnt == v-1:
+    print('MST 맞음')
+else:
+    print('MST 아님')

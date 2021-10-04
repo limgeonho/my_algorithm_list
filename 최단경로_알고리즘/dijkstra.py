@@ -6,7 +6,6 @@
 
 import heapq
 import sys
-from typing_extensions import IntVar
 input = sys.stdin.readline
 INF = sys.maxsize
 
