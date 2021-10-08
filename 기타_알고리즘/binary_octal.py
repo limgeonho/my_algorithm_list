@@ -19,3 +19,15 @@ def solution(n, q):
 
 
 print(solution(45, 3))
+
+print(solution(11, 2))
+
+
+
+def change(n, notation):
+    tmp = ''
+    while n > 0:
+        n, mod = divmod(n, notation)
+        tmp += str(mod)
+
+    return tmp[::-1]
