@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee0b89d9-4899-44e8-b465-ad3b70756397" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/기타_알고리즘/binary_octal.py" beforeDir="false" afterPath="$PROJECT_DIR$/기타_알고리즘/binary_octal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/기타_알고리즘/prime_number_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/기타_알고리즘/prime_number_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/정렬_알고리즘/quick_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/정렬_알고리즘/quick_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_of_basic/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_of_basic/basic_permutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_of_basic/basic_things.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,36 +13,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/순열_조합_부분집합.py/subset_examples.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/순열_조합_부분집합.py/subsets.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/기타_알고리즘/binary_octal.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/기타_알고리즘/prime_number_2.py">
+        <entry file="file://$PROJECT_DIR$/basic_of_basic/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="655">
+              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic_of_basic/basic_things.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -57,16 +38,20 @@
         <option value="$PROJECT_DIR$/순열_조합_부분집합.py/subset_examples.py" />
         <option value="$PROJECT_DIR$/기타_알고리즘/binary_octal.py" />
         <option value="$PROJECT_DIR$/기타_알고리즘/prime_number_2.py" />
+        <option value="$PROJECT_DIR$/basic_of_basic/test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="6" />
-    <option name="width" value="1297" />
-    <option name="height" value="1398" />
+    <option name="x" value="1911" />
+    <option name="y" value="-3" />
+    <option name="width" value="2578" />
+    <option name="height" value="1408" />
   </component>
   <component name="ProjectId" id="1xgC4oOjbMYMCt0eoUlzSnqZfzQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -83,7 +68,7 @@
             <path>
               <item name="my_algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="기타_알고리즘" type="462c0819:PsiDirectoryNode" />
+              <item name="basic_of_basic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -112,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.binary_octal">
+  <component name="RunManager" selected="Python.test">
     <configuration name="binary_octal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="my_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,8 +140,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="my_algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/basic_of_basic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic_of_basic/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.binary_octal" />
         <item itemvalue="Python.subset_examples" />
       </list>
@@ -178,15 +185,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-1" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1254321" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08987654" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3282981" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997986" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -220,7 +226,17 @@
     <entry file="file://$PROJECT_DIR$/기타_알고리즘/prime_number_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_of_basic/basic_things.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_of_basic/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
         </state>
       </provider>
     </entry>
