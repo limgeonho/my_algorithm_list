@@ -9,6 +9,7 @@
 # O(ElogE)
 # ================================================================================
 
+import heapq
 from heapdict import heapdict
 from collections import defaultdict
 from heapq import *
@@ -80,3 +81,41 @@ def prim(graph, start):
 
 # list_dict2 = defaultdict(int)
 # print(list_dict2['key2']) => 0
+
+# ===============================================================================
+
+
+def prim():
+
+    q = []
+    # (0, 0) => (가중치, 시작점)
+    heapq.heappush(q, (0, 0))
+    answer = 0
+
+    while q:
+        w, v = heapq.heappop(q)
+        # 방문한지 확인(= MST에 포함되어 있는지 확인)
+        if not visited[v]:
+            answer += w
+            visited[v] = 1
+
+            for idx, weight in adj[v]:
+                if not visited[idx]:
+                    heapq.heappush(q, (weight, idx))
+
+
+v, e = map(int, input().split())
+
+adj = [[] for _ in range(v+1)]
+
+# MST에 포함되었는지 visisted로 확인 why? => heapq에서는 작은 순서대로 나옴
+visited = [0] * (v+1)
+
+
+for i in range(e):
+    n1, n2, w = map(int, input().split())
+    # 양방향 그래프
+    adj[n1].append((n2, w))
+    adj[n2].append((n1, w))
+
+prim()
