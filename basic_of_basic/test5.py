@@ -18,16 +18,18 @@ def perm(L):
 
 # perm(0)
 
-
+answer = []
 def comb(L, start):
     if L == n:
-        print(*res)
+        answer.append(res[:])
         return
     for i in range(start, len(array)):
         res[L] = array[i]
         comb(L+1, i+1)
 
-# comb(0, 0)
+comb(0, 0)
+print(answer)
+
 
 def perm_with(L):
     if L == n:
@@ -37,4 +39,4 @@ def perm_with(L):
         res[L] = array[i]
         perm_with(L+1)
 
-perm_with(0)
+# perm_with(0)
