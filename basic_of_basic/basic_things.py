@@ -52,13 +52,13 @@ def comb(L, start):
 
 # ====================================
 # 부분집합
-def powerset(L, ps):
+def subset(L, ss):
     if L == n:
-        if not ps:                  # 공집합은 제거
+        if not ss:                  # 공집합은 제거
             return
-        print(ps)
+        print(ss)
         return
-    powerset(L+1, ps + [array[L]])  # 해당 원소를 선택 O
-    powerset(L+1, ps)               # 해당 원소를 선택 X
+    subset(L+1, ss + [array[L]])  # 해당 원소를 선택 O
+    subset(L+1, ss)               # 해당 원소를 선택 X
 
-#powerset(0, [])
+# subset(0, [])
