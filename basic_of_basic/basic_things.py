@@ -58,7 +58,7 @@ def subset(L, ss):
             return
         print(ss)
         return
-    subset(L+1, ss + [array[L]])  # 해당 원소를 선택 O
+    subset(L+1, ss + [array[L]])  # 해당 원소를 선택 O => [] + [1] = [1]
     subset(L+1, ss)               # 해당 원소를 선택 X
 
 # subset(0, [])
