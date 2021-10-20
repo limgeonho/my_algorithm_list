@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee0b89d9-4899-44e8-b465-ad3b70756397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic_of_basic/test6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ee0b89d9-4899-44e8-b465-ad3b70756397" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +13,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic_of_basic/test6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
+            <state relative-caret-position="570">
               <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
             </state>
           </provider>
@@ -44,10 +41,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3190" />
-    <option name="y" value="-4" />
-    <option name="width" value="1299" />
-    <option name="height" value="1409" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectId" id="1xgC4oOjbMYMCt0eoUlzSnqZfzQ" />
   <component name="ProjectLevelVcsManager">
@@ -58,7 +55,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,6 +76,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -234,9 +231,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="-1" width="2062" height="1126" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06666667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.066093855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -334,7 +331,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic_of_basic/test6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
+        <state relative-caret-position="570">
           <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
         </state>
       </provider>

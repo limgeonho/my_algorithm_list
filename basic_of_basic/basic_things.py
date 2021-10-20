@@ -8,7 +8,7 @@ res = [0] * n
 
 
 # ====================================
-# 순열
+# 순열(=순서가 있는 조합)
 def perm(L):
     if L == n:
         print(*res)
@@ -62,3 +62,27 @@ def subset(L, ss):
     subset(L+1, ss)               # 해당 원소를 선택 X
 
 # subset(0, [])
+
+
+# ====================================
+# 다음 순열
+def next_perm(array):
+    i = len(array) - 1
+    while i > 0 and array[i-1] >= array[i]:
+        i -= 1
+
+    if i <= 0:
+        return False
+
+    j = len(array) - 1
+    while array[i-1] >= array[j]:
+        j -= 1
+
+    array[i-1], array[j] = array[j], array[i-1]
+
+    j = len(array) - 1
+    while i < j:
+        array[i], array[j] = array[j], array[i]
+        i += 1
+        j -= 1
+    return True
