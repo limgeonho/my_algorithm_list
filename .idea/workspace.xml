@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee0b89d9-4899-44e8-b465-ad3b70756397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic_of_basic/review.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_of_basic/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_of_basic/test2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_of_basic/test3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_of_basic/test4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_of_basic/test5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_of_basic/test6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_of_basic/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_of_basic/review.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +17,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/basic_of_basic/review.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+                <state relative-caret-position="474">
+                  <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -36,7 +29,9 @@
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/basic_of_basic/basic_things.py">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-660" />
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -250,7 +245,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-1" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13037036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -317,12 +311,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic_of_basic/test6.py" />
     <entry file="file://$PROJECT_DIR$/basic_of_basic/basic_things.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basic_of_basic/review.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="474">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
         </state>
       </provider>
     </entry>
