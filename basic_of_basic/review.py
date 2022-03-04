@@ -317,3 +317,61 @@ from bisect import bisect_left
 #     for i in range(1, n + 1):
 #         for j in range(1, n + 1):
 #             graph[i][j] = min(graph[i][j], graph[i][k] + graph[k][j])
+
+# def matrix(arr1, arr2):
+#     row = len(arr1)
+#     col = len(arr2[0])
+#
+#     answer = [[0] * col for _ in range(row)]
+#
+#     for i in range(row):
+#         for j in range(col):
+#             for k in range(arr1[0]):
+#                 answer[i][j] += arr1[i][k] * arr2[k][j]
+#
+#     return answer
+#
+# answer = [k[::-1]for _ in zip(*arr)]
+
+# a = [
+#     [1, 2, 3, 4],
+#     [5, 6, 7, 8],
+#     [9, 10, 11, 12]
+# ]
+#
+# def rotate(a):
+#     row = len(a)
+#     col = len(a[0])
+#
+#     changed = [[0]*row for _ in range(col)]
+#
+#     for r in range(row):
+#         for c in range(col):
+#             changed[c][row-1-r] = a[r][c]
+#
+#     return changed
+#
+# print(rotate(a))
+
+
+# data = [1,3,5,4,2,58,4,2,3,8,1,2,3]
+# n = len(data)
+# m = 6
+#
+#
+# cnt = 0
+# interval = 0
+# end = 0
+#
+# for start in range(n):
+#     while interval < m and end < n:
+#         interval += data[end]
+#         end += 1
+#
+#     if interval == m:
+#         cnt += 1
+#
+#     interval -= data[start]
+#
+# print(cnt)
+
