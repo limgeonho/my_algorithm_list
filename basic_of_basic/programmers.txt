@@ -1,0 +1,8 @@
+[프로그래머스]
+- rjust, ljust, join 함수
+- 연산횟수가 정해져 있으면 for문의 최대값으로 제한
+- 소우인지 판별은 n % 1 == 0 이면 소수!
+- 리스트 뒤집기 list.reverse() or arr[::-1] + 슬라이싱
+- list.sort() or sorted(list) / list자체를 바꿈 or 바뀐 리스트를 반환 <= 변수에 저장해줘야함
+- ''.join(list) => 문자열로 나옴
+- map(function, iterable)
