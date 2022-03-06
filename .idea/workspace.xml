@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee0b89d9-4899-44e8-b465-ad3b70756397" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/basic_of_basic/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_of_basic/review.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/기타_알고리즘/two_pointer.py" beforeDir="false" afterPath="$PROJECT_DIR$/기타_알고리즘/two_pointer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic_of_basic/review2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +18,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/다이나믹프로그래밍/longest_increasing_subsequence.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
+                <state relative-caret-position="30">
                   <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
                 </state>
               </provider>
@@ -27,7 +27,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/basic_of_basic/review.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="817">
+                <state relative-caret-position="7539">
                   <caret line="377" selection-start-line="377" selection-end-line="377" />
                 </state>
               </provider>
@@ -36,11 +36,27 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/다이나믹프로그래밍/longest_common_subsequence.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/basic_of_basic/programmers.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-71" />
+                <state>
+                  <caret column="7" selection-start-column="7" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/basic_of_basic/review2.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="564">
+                  <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+                </state>
               </provider>
             </entry>
           </file>
@@ -66,6 +82,8 @@
         <option value="$PROJECT_DIR$/basic_of_basic/test6.py" />
         <option value="$PROJECT_DIR$/기타_알고리즘/two_pointer.py" />
         <option value="$PROJECT_DIR$/basic_of_basic/review.py" />
+        <option value="$PROJECT_DIR$/basic_of_basic/programmers.txt" />
+        <option value="$PROJECT_DIR$/basic_of_basic/review2.py" />
       </list>
     </option>
   </component>
@@ -139,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.review">
+  <component name="RunManager" selected="Python.review2">
     <configuration name="pythonic_way" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="my_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,7 +200,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="review2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="my_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,7 +212,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic_of_basic/test4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic_of_basic/review2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -247,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.review2" />
         <item itemvalue="Python.review" />
         <item itemvalue="Python.pythonic_way" />
         <item itemvalue="Python.test6" />
         <item itemvalue="Python.test5" />
-        <item itemvalue="Python.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -272,12 +290,12 @@
   <component name="ToolWindowManager">
     <frame x="1913" y="-1" width="2062" height="1126" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13037036" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13037036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23665659" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23665659" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997986" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,13 +483,6 @@
     <entry file="file://$PROJECT_DIR$/비트마스크/bitmask.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/다이나믹프로그래밍/longest_increasing_subsequence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/기타_알고리즘/binary_octal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -479,16 +490,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/다이나믹프로그래밍/longest_increasing_subsequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/basic_of_basic/review.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
+        <state relative-caret-position="7539">
           <caret line="377" selection-start-line="377" selection-end-line="377" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/다이나믹프로그래밍/longest_common_subsequence.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_of_basic/programmers.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71" />
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_of_basic/review2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        </state>
       </provider>
     </entry>
   </component>
