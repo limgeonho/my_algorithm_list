@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee0b89d9-4899-44e8-b465-ad3b70756397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic_of_basic/review2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_of_basic/review2.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_of_basic/review2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +24,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/basic_of_basic/review.py">
+            <entry file="file://$PROJECT_DIR$/basic_of_basic/review2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7539">
-                  <caret line="377" selection-start-line="377" selection-end-line="377" />
+                <state relative-caret-position="456">
+                  <caret line="175" column="32" lean-forward="true" selection-start-line="175" selection-start-column="32" selection-end-line="175" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -52,10 +51,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/basic_of_basic/review2.py">
+            <entry file="file://$PROJECT_DIR$/basic_of_basic/review.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="564">
-                  <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+                <state relative-caret-position="-5078">
+                  <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -289,6 +288,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-1" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13037036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -497,16 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic_of_basic/review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7539">
-          <caret line="377" selection-start-line="377" selection-end-line="377" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/다이나믹프로그래밍/longest_common_subsequence.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic_of_basic/programmers.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -514,10 +504,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/다이나믹프로그래밍/longest_common_subsequence.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic_of_basic/review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5078">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/basic_of_basic/review2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        <state relative-caret-position="456">
+          <caret line="175" column="32" lean-forward="true" selection-start-line="175" selection-start-column="32" selection-end-line="175" selection-end-column="32" />
         </state>
       </provider>
     </entry>
