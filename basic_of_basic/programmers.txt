@@ -1,8 +1,18 @@
 [프로그래머스]
 - rjust, ljust, join 함수
-- 연산횟수가 정해져 있으면 for문의 최대값으로 제한
-- 소우인지 판별은 n % 1 == 0 이면 소수!
+- 연산횟수가 정해져 있으면 for문의 최대값으로 제한(0.XX)
+- 소수인지 판별은 n % 1 == 0 이면 소수!
 - 리스트 뒤집기 list.reverse() or arr[::-1] + 슬라이싱
 - list.sort() or sorted(list) / list자체를 바꿈 or 바뀐 리스트를 반환 <= 변수에 저장해줘야함
 - ''.join(list) => 문자열로 나옴
 - map(function, iterable)
+- isalpha(), isdigit(), isalnum()
+- 알파벳을 숫자로 ord / 숫자를 알파벳으로 chr
+- 리스트에서 원하는 요소를 찾을때 list.index("찾는 요소")
+- f-string => f'{변수} 입니다.'
+- for 문 멈추기 => break / for 문 건너 뛰기 => continue
+- len(s) in (4, 6) => s의 길이가 4나 6이라는 숫자에 포함되어 있나?
+- answer = ''.join(sorted(s, reverse=True)) => s라는 리스트를 거꾸로 정렬
+- sorted(a, key=lambda x:x[0])
+- 문자열에서 특정 문자 세기 => cnt = strings.count('letter')
+- sum(range(3, 6)) => 3부터 5까지 숫자의 합을 계산해서 return
